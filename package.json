@@ -1,0 +1,11 @@
+{
+  "name": "voice-interaction",
+  "version": "1.0.0",
+  "description": "simple module to interact with your site using voice",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mmmaxou",
+  "license": "ISC"
+}
