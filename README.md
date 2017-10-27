@@ -57,7 +57,7 @@ Create a wheel of choices for a your application
 ```
 
 * Screenshot of the render
-![Image of the Wheel](https://mmmaxou.github.com/wheels/exemple/wheel-screenshot.png)
+![Image of the Wheel](https://raw.githubusercontent.com/mmmaxou/wheels/master/exemple/wheel-screenshot.png)
 
 ## Installation
 
