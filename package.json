@@ -1,5 +1,5 @@
 {
-  "name": "vwheels",
+  "name": "wheels-of-choices",
   "version": "1.0.0",
   "description": "simple module to create wheels of questions",
   "main": "main.js",
