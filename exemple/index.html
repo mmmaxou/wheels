@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--List of links-->
+
+  <h1>Menu</h1>
+  <ul>
+    <li>
+      <a href="page-1" data-voice="page one">Page 1</a>
+      <a href="page-2">Page 2</a>
+      <a href="page-3">Page 3</a>
+      <a href="page-4">Page 4</a>
+    </li>
+  </ul>
+  <button onclick="Voice.startListening()">Start listening</button>
+
+
+  <div id="mocha"></div>
+</body>
+
+
+<!--Load librairies and init mocha-->
+<script src="../libs/chai.js"></script>
+<script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+<script>
+  mocha.setup('bdd')
+
+</script>
+<script src="../test/test.main.js"></script>
+
+<!--Load the module -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+<script src="../docs/main.js"></script>
+<!--Run mocha-->
+<script>
+  mocha.run();
+
+</script>
+
+</html>
