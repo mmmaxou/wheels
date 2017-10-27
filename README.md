@@ -58,6 +58,9 @@ CircleCreator.init({
 })
 `
 
+* Screenshot of the render
+![Image of the Wheel](https://mmmaxou.github.com/wheels/exemple/wheel-screenshot.png)
+
 ## Installation
 
 `npm install voice-interaction`
