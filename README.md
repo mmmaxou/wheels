@@ -9,7 +9,7 @@ Interact with your website using your voice
 * Link the library to your app
 <script src="/libs/voice-interaction.js"></script>
 
-* Add the tags [data-voice="`<what-to-say>`"] to your links `<a>`
+* Add the tags \[data-voice=`"<what-to-say>"`\] to your links `<a>`
 `<ul>
 	<li>
     <a href="page-1" data-voice="page one">Page 1</a>
