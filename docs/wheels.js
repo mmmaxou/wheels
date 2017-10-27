@@ -188,6 +188,8 @@ let CircleCreator = {
   createDom: function () {
 
     if (!this.values.customDom) {
+      this.values.multiplier = Number($('.wheel').attr("data-multiplier")) || this.values.multiplier
+      this.values.answers = ('.wheel-outer .content')
       return
     }
 
@@ -241,18 +243,3 @@ let CircleCreator = {
     this.recalculate()
   },
 }
-CircleCreator.init({
-  multiplier: 3,
-  selector: ".wheel-container",
-  customDom: true,
-  question: "Use the <question> property to add your question",
-  answers: [
-    "42", "Cat", "42", "Cat", "42", "Cat", "42", "Cat"
-  ]
-})
-
-
-/*
-TODO 
-Add more clip points for low amounts of choices
-*/

@@ -4,29 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <title>index</title>
+  <link rel="stylesheet" href="../docs/wheels.css">
 </head>
 
 <body>
 
-  <!--List of links-->
+  <div class="wheel-container">
+    <div class="wheel-overlay">
+      <div class="wheel" data-multiplier=2.5>
+        <div class="wheel-center">
+          <div class="question">Qui est patrick sebastien?</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Quelqu'un</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Oui</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Non</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">42</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Obiwan Kenobi</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Le grand frère de Donald Trump</div>
+        </div>
+        <div class="wheel-outer">
+          <div class="content">Le grand frère de Donald Trump le président des Etats unis</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h1>Menu</h1>
-  <ul>
-    <li>
-      <a href="page-1" data-voice="page one">Page 1</a>
-      <a href="page-2" data-voice="page two">Page 2</a>
-      <a href="page-3" data-voice="page three">Page 3</a>
-    </li>
-  </ul>
-  <button onclick="Voice.startListening()">Start listening</button>
+
+
 
 
 </body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="../docs/wheels.js"></script>
+<script>
 
+  CircleCreator.init({
+    selector: ".wheel-container"
+  })
+//CircleCreator.init({
+//  multiplier: 3,
+//  selector: ".wheel-container",
+//  customDom: true,
+//  question: "Use the <question> property to add your question",
+//  answers: [
+//    "42", "Cat", "42", "Cat", "42", "Cat", "42", "Cat"
+//  ]
+//})
 
-<!--Load the module -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
-<script src="../docs/main.js"></script>
-
+  </script>
 </html>
